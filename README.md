@@ -16,9 +16,9 @@
         <li>Download <code>file_organizer.py</code> from <a href="https://github.com/DilanHansaja/Simple_File_Organizer">here</a>.</li>
         <li>Open the command prompt and navigate to the path that script downloaded.</li>
         <li>Run the script using:</li>
-        <li>Follow the on-screen instructions to confirm file organization.</li>
-    </ol>
+        <p></p>
     <pre><code>python file_organizer.py</code></pre>
+    <li>Follow the on-screen instructions to confirm file organization.</li>    </ol>
     <h2>📂 File Categories</h2>
     <ul>
         <li><strong>Images:</strong> jpg, jpeg, png, gif, bmp, tiff</li>
