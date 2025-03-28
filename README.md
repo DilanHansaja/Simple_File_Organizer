@@ -14,8 +14,9 @@
     <p>Download the Python script and run it directly:</p>
     <ol>
         <li>Download <code>file_organizer.py</code> from <a href="https://github.com/DilanHansaja/Simple_File_Organizer">here</a>.</li>
-        <li>Open the command prompt and navigate to that folder.</li>
+        <li>Open the command prompt and navigate to the path that script downloaded.</li>
         <li>Run the script using:</li>
+        <li>Follow the on-screen instructions to confirm file organization.</li>
     </ol>
     <pre><code>python file_organizer.py</code></pre>
     <h2>📂 File Categories</h2>
