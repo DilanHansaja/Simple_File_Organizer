@@ -55,6 +55,7 @@ def scanDirectory(directory_path):
             print(f'Progress: {int(percentage)}%', end='\r')
 
         print(f'Completed: 100%', end="\r")
+        print()
 
         checkDuplicates()
 
@@ -93,7 +94,7 @@ def moveFile(source,destination):
 def checkDuplicates():
 
     if len(duplicates) >0:
-        input(f'{len(duplicates)} Duplicate files were found.\nThey are not affected by the program.')
+        print(f'{len(duplicates)} Duplicate files were found.\nThey are not affected by the program.')
 
 def initialize():
 
