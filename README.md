@@ -5,7 +5,7 @@
     <p>A simple Python script to organize files in a directory by categorizing them into folders.</p>
     <h2>🚀 Features</h2>
     <ul>
-    <li>Automatically sorts files into <code>Images</code>, <code>Videos</code>, <code>Audios</code>, <code>Documents</code>, <code>Archives</code><code>Executables</code>, <code>Codes</code>, and <code>Other</code> folders.</li>
+    <li>Automatically sorts files into <code>Images</code>, <code>Videos</code>, <code>Audios</code>, <code>Documents</code>, <code>Archives</code>, <code>Executables</code>, <code>Codes</code>, and <code>Other</code> folders.</li>
 </li>
         <li>Handles duplicate files and prevents overwriting.</li>
         <li>Provides a progress percentage while organizing files.</li>
