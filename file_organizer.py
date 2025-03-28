@@ -3,16 +3,18 @@ import shutil
 import os
 
 media_extensions = {
-        'images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff'],
-        'videos': ['.mp4', '.avi', '.mkv', '.mov', '.flv', '.wmv'],
-        'audios': ['.mp3', '.wav', '.aac', '.flac', '.ogg'],
-        'documents': ['.pdf', '.doc', '.docx', '.pptx'],
-        'other': ['.psd', '.ai', '.eps']
+    'images': ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp', '.svg', '.ico', '.heif', '.heic', '.raw','.jfif'],
+    'videos': ['.mp4', '.avi', '.mkv', '.mov', '.flv', '.wmv', '.webm', '.mpeg', '.3gp', '.m4v', '.ts'],
+    'audios': ['.mp3', '.wav', '.aac', '.flac', '.ogg', '.m4a', '.wma', '.opus', '.aiff', '.amr'],
+    'documents': ['.pdf', '.doc', '.docx', '.ppt', '.pptx', '.xls', '.xlsx', '.txt', '.rtf', '.odt', '.ods', '.odp', '.csv', '.md'],
+    'archives': ['.zip', '.rar', '.7z', '.tar', '.gz', '.bz2', '.xz', '.iso'],
+    'executables': ['.exe', '.msi', '.bat', '.sh', '.apk', '.dmg'],
+    'codes': ['.html', '.css', '.js', '.json', '.xml', '.java', '.py', '.c', '.cpp', '.cs', '.php', '.rb', '.go', '.ts', '.sql'],
     }
 
 duplicates=[]
 
-folders = {"Images":None,"Videos":None,"Audios":None,"Documents":None,"Other":None}
+folders = {"Images":None,"Videos":None,"Audios":None,"Documents":None,"Archives":None,"Executables":None,"Codes":None,"Other":None}
 
 def scanDirectory(directory_path):
 
@@ -30,7 +32,6 @@ def scanDirectory(directory_path):
 
             scanned_file = Path(file)
 
-
             if scanned_file.suffix in media_extensions["images"]:
 
                 create_folder("Images", directory_path, scanned_file)
@@ -46,6 +47,18 @@ def scanDirectory(directory_path):
             elif scanned_file.suffix in media_extensions["documents"]:
 
                 create_folder("Documents", directory_path, scanned_file)
+
+            elif scanned_file.suffix in media_extensions["archives"]:
+
+                create_folder("Archives", directory_path, scanned_file)
+
+            elif scanned_file.suffix in media_extensions["executables"]:
+
+                create_folder("Executables", directory_path, scanned_file)
+
+            elif scanned_file.suffix in media_extensions["codes"]:
+
+                create_folder("Codes", directory_path, scanned_file)
 
             else:
 
